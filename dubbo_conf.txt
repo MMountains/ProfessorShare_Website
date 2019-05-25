@@ -1,0 +1,13 @@
+tomcat  10.128.3.168:8080
+
+dubbo-admin 10.128.3.168:8080/dubbo-admin
+dubbo-admin：用户名guest 密码guest
+
+druid 10.128.3.168:8080/druid/druid
+druid：用户名druid 密码druid
+
+dubbo-monitor 10.128.3.168:8081
+
+zookeeper 10.128.3.168:2181
+
+-------------------本地情况----------------
