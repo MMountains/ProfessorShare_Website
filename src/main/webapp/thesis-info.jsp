@@ -18,7 +18,7 @@
     <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 </head>
 <body>
-<div style="background-image: linear-gradient(135deg, #2B2D42, #EF233C);">
+<div id="wrapper" style="background-image: linear-gradient(135deg, #2B2D42, #EF233C);">
     <div id="top" class="nav navbar-nav" style="width: 100%; height: 50px; background-color:rgba(0,0,0,0.75);">
         <div class="container" style="height: 100%;">
             <a class="nav navbar-nav navbar-right" style="color: white; margin-top: 10px;">用户</a>
@@ -58,11 +58,30 @@
             <div class="row" style="padding-top: 80px;">
                 <div class="col-lg-3"></div>
                 <div class="col-lg-3" style="text-align: right; padding-top: 8px;">价格：XX元</div>
-                <div class="col-lg-3"><button class="btn" style="width: 80px;">下载</button></div>
+                <div class="col-lg-3"><button class="btn btn-primary" style="width: 80px;">下载</button></div>
                 <div class="col-lg-3"></div>
             </div>
         </div>
     </div>
 </div>
+<%-- footer --%>
+<div id="footer" style="background-color: #2B2D42; height: 120px;">
+    <div class="container" >
+        <div class="row" style="margin-top: 40px; text-align: center; color: white;">
+            北京学院软件队
+        </div>
+        <div class="row" style="margin-top: 10px; text-align: center; color: white;">
+            2019-6
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function(){
+        var winHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+        document.getElementById("wrapper").style.minHeight = winHeight + "px";
+
+    });
+</script>
 </body>
 </html>
